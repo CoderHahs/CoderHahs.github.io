@@ -477,10 +477,10 @@ h1 .li, h2 .li, h3 .li, p .li {
     padding-left: 0.5em;
     margin: 0.75em 0 0 1em;
 }
-#text01 br + br {
+#home-title br + br {
     margin-top: 0.75rem;
 }
-#text01 {
+#home-title {
     color: #ffbd7f;
     letter-spacing: -0.05rem;
     width: 100%;
@@ -488,112 +488,45 @@ h1 .li, h2 .li, h3 .li, p .li {
     line-height: 1.25;
     text-align: inherit;
 }
-#text02 {
+#home-secondary {
     font-size: 1.25em;
     font-weight: 300;
     letter-spacing: 0;
     width: auto;
     text-align: inherit;
 }
-#text03 {
+#about-title {
     color: #ffbd7f;
     font-size: 2em;
 }
-#text04 {
+#about-p {
     text-align: justify;
     font-size: 1em;
 }
-#text04 a {
+#about-p a {
     color: #ffbd7f;
     text-decoration: underline;
 }
-#text04 a:hover {
+#about-p a:hover {
     text-decoration: none;
 }
-#text07 br + br {
+#other-title br + br {
     margin-top: 0.525rem;
 }
-#text07 {
-    color: #ffbd7f;
-    line-height: 1;
-    font-size:1.25em;
-}
-#text08 {
-    text-align: justify;
-    font-size: 0.875em;
-}
-#text05 br + br {
-    margin-top: 0.525rem;
-}
-#text05 {
-    color: #ffbd7f;
-    line-height: 1;
-    font-size:1.25em;
-}
-#text13 {
-    text-align: justify;
-    font-size: 0.875em;
-}
-#text10 br + br {
-    margin-top: 0.525rem;
-}
-#text10 {
+#other-title {
     color: #ffbd7f;
     line-height: 1;
     font-size: 1.25em;
 }
-#text16 {
+#other-p {
     text-align: justify;
     font-size: 0.875em;
 }
-#text11 br + br {
-    margin-top: 0.525rem;
-}
-#text11 {
+#other-p a {
     color: #ffbd7f;
-    line-height: 1;
-    font-size: 1.25em;
-}
-#text06 {
-    text-align: justify;
-    font-size: 0.875em;
-}
-#text12 br + br {
-    margin-top: 0.525rem;
-}
-#text12 {
-    color: #ffbd7f;
-    line-height: 1;
-    font-size: 1.25em;
-}
-#text14 {
-    text-align: justify;
-    font-size: 0.875em;
-}
-#text14 a {
-	color: #ffbd7f;
     text-decoration: underline;
 }
-#text14 a:hover {
-    text-decoration: none;
-}
-#text09 br + br {
-    margin-top: 0.525rem;
-}
-#text09 {
-    color: #ffbd7f;
-    line-height: 1;
-    font-size: 1.25em;
-}
-#text15 {
-    text-align: justify;
-    font-size: 0.875em;
-}
-#text15 a {
-	color: #ffbd7f;
-    text-decoration: underline;
-}
-#text15 a:hover {
+#other-p a:hover {
     text-decoration: none;
 }
 #credits {
@@ -1044,7 +977,7 @@ h1, h2, h3, p {
         margin-top: 0.375rem;
         margin-bottom: 0.375rem;
     }
-    #text01 {
+    #home-title {
         font-size: 2em;
     }
     #icons02 {
@@ -1749,8 +1682,8 @@ Object.deepExtend = function(e, a) {
                   <div id="columns01" class="container">
                      <div class="inner">
                         <div>
-                           <h1 id="text01">Hrithik Shah</h1>
-                           <h3 id="text02">Aspiring Software Engineer</h3>
+                           <h1 id="home-title">Hrithik Shah</h1>
+                           <h3 id="home-secondary">Aspiring Software Engineer</h3>
                            <ul id="icons02" class="icons">
                               <li>
                                  <a class="n01" href="#about" rel = "next">
@@ -1801,8 +1734,8 @@ Object.deepExtend = function(e, a) {
                   </div>
                </section>
                <section id="about-section">
-                  <h2 id="text03">Hi! How are you?</h2>
-                  <p id="text04">Me? ...Well, I&#39;ve got a lot going on! At the moment, I am <a href ="#work" rel = "next">working</a> with inspiring individuals, figuring out what to explore on the weekends, and missing my mom&#39;s home cooking. I love to take <a href="https://www.instagram.com/hrithikhahs/" target="_blank">pictures</a>, binge shows and work on <a href="#projects" rel = "next">projects</a>. Do you want to <a href="mailto:hrithikchamp@gmail.com">grab a bite</a>? I&#39;d be happy to talk about tennis, machine-learning and <a href="https://www.youtube.com/watch?v=kTlv5_Bs8aw" target="_blank">BTS</a> over some South-Indian cuisine.</p>
+                  <h2 id="about-title">Hi! How are you?</h2>
+                  <p id="about-p">Me? ...Well, I&#39;ve got a lot going on! At the moment, I am <a href ="#work" rel = "next">working</a> with inspiring individuals, figuring out what to explore on the weekends, and missing my mom&#39;s home cooking. I love to take <a href="https://www.instagram.com/hrithikhahs/" target="_blank">pictures</a>, binge shows and work on <a href="#projects" rel = "next">projects</a>. Do you want to <a href="mailto:hrithikchamp@gmail.com">grab a bite</a>? I&#39;d be happy to talk about tennis, machine-learning and <a href="https://www.youtube.com/watch?v=kTlv5_Bs8aw" target="_blank">BTS</a> over some South-Indian cuisine.</p>
                   <ul id="icons03" class="icons">
                      <li>
                         <a class="n01" href="#home" rel = "prev">
@@ -1815,10 +1748,14 @@ Object.deepExtend = function(e, a) {
                   </ul>
                </section>
                <section id="work-section">
-                  <p id="text07"><span>Astral Tech | Software Developer Intern</span><br /> <span>Current</span></p>
-                  <p id="text08">I primarily worked on back-end services, where I helped make store procedures more efficient for the user.</p>
-                  <p id="text05"><span>Smileworks Orthodontics | Equipment Technician</span><br /> <span>Summer 2015</span></p>
-                  <p id="text13">I scanned tooth models using state-of-the-art equipment which helped the orthodontist forecast plans for the patients.</p>
+                  <p id="other-title"><span>Astral Tech | Software Developer Intern</span><br /> <span>July 2018 - Aug 2018</span></p>
+                  <p id="other-p">As an intern, my major responsibility was increasing the efficiency of data analysis. I was introduced to SQL Server, and immediately I found myself against a major hurdle. Since the data being analysed was not always known, I had to figure out a way to flexibly collect the data while executing SQL commands. This form of coding is called Dynamic SQL, and it is used by big companies like Amazon to access their huge databases for queries. As I was developing my algorithms, my mentor in the company helped make it even more efficient, by suggesting ways in which I could go about solving the problem. Overall, I reduced analysis times from 20 hours to 20 mins.</p>
+                  <p id="other-title"><span>TurnerHacks | Head of Sponsorship</span><br /> <span>Nov 2017 -June 2018</span></p>
+                  <p id="other-p">I brought in 10+ tech companies as corporate sponsors for the event which helped fund costs for food, workshops and participants’ fee. I also helped raise over $5000 USD in product sponsorships and over $1000 CAD in monetary sponsorships. Working with Major League Hacking (MLH) ensured a successful hackathon.</p>
+                  <p id="other-title"><span>SHAD Entrepreneurship Cup | Team GreenThreads</span><br /> <span>July 2017</span></p>
+                  <p id="other-p">My team and I partnered with new start-ups to promote local businesses and eco-friendly products. We presented an elevator pitch to a panel of investors. Our product, an alpha version app created using Proto.io, helps consumers see the carbon emissions created for a particular article of clothing. This helps the consumer to gain an awareness about their clothing decisions.</p>
+                  <p id="other-title"><span>Smileworks Orthodontics | Equipment Technician</span><br /> <span>Summer 2015</span></p>
+                  <p id="other-p">Over the course of the summer, I learned how dentists scan teeth to develop 3D models that are later used to project orthodontic procedures. As I was not certified to work with patients, my task was to archive and scan all the clay models of patients' teeth. I scanned upwards of 100 tooth models using the same state-of-the-art equipment used by dentists to scan teeth. Additionally, I sterilized dental equipment and archived X-Rays.</p>
                   <ul id="icons04" class="icons">
                      <li>
                         <a class="n01" href="#about" rel = "prev">
@@ -1831,14 +1768,14 @@ Object.deepExtend = function(e, a) {
                   </ul>
                </section>
                <section id="projects-section">
-                  <p id="text10"><span>TurnerHacks | Head of Sponsorship</span><br /> <span>Nov 2017 -June 2018</span></p>
-                  <p id="text16">I brought in 10+ tech companies as corporate sponsors for the event which helped fund costs for food, workshops and participants’ fee. I also helped raise over $5000 USD in product sponsorships and over $1000 CAD in monetary sponsorships. Working with Major League Hacking (MLH) ensured a successful hackathon.</p>
-                  <p id="text11"><span>SHAD Entrepreneurship Cup | Team GreenThreads</span><br /> <span>July 2017</span></p>
-                  <p id="text06">My team and I partnered with new start-ups to promote local businesses and eco-friendly products. We presented an elevator pitch to a panel of investors. Our product, an alpha version app created using Proto.io, helps consumers see the carbon emissions created for a particular article of clothing. This helps the consumer to gain an awareness about their clothing decisions.</p>
-                  <p id="text12"><span>Yugioh Card Game | Java</span><br /> <span>Dec 2015 - Jan 2016</span></p>
-                  <p id="text14">I hacked together a Java prototype of the Yugioh card game in less than a week. I wrote over 4000 lines of code implementing Java applets and creating the screen layout for the game. This undertaking was certainly a rewarding learning experience as it compelled me to prioritize my time and be scrappy. You can download this game through <a href="https://goo.gl/M5jMPa" target="_blank">my Github</a>.</p>
-                  <p id="text09"><span>Invasion of the Shadows | Unity, C#, JS</span><br /> <span>Nov 2014 - Aug 2015</span></p>
-                  <p id="text15">When developing this Unity game, I used a timeline structure, where the player would travel from one civilization to another, fighting-off aliens while also learning about the ancient civilizations of our planet. By using this approach, I ensured that the game was not only fun but also educational for the player. You can download this game through <a href="https://goo.gl/cMYjaL" target="_blank">my Github</a>.</p>
+               	  <p id="other-title"><span>Search Engine | Python</span><br /> <span>Nov 2018 - Dec 2018</span></p>
+               	  <p id="other-p">rhrhehrhhreherhrherh</p>
+               	  <p id="other-title"><span>Personal Website | HTML, CSS, JavaScript, SEO Optimization</span><br /> <span>Nov 2018 - Dec 2018</span></p>
+               	  <p id="other-p">rhrhehrhhreherhrherh</p>
+                  <p id="other-title"><span>Yugioh Card Game | Java</span><br /> <span>Dec 2015 - Jan 2016</span></p>
+                  <p id="other-p">I hacked together a Java prototype of the Yugioh card game in less than a week. I wrote over 4000 lines of code implementing Java applets and creating the screen layout for the game. This undertaking was certainly a rewarding learning experience as it compelled me to prioritize my time and be scrappy. You can download this game through <a href="https://goo.gl/M5jMPa" target="_blank">my Github</a>.</p>
+                  <p id="other-title"><span>Invasion of the Shadows | Unity, C#, JS</span><br /> <span>Nov 2014 - Aug 2015</span></p>
+                  <p id="other-p">When developing this Unity game, I used a timeline structure, where the player would travel from one civilization to another, fighting-off aliens while also learning about the ancient civilizations of our planet. By using this approach, I ensured that the game was not only fun but also educational for the player. You can download this game through <a href="https://goo.gl/cMYjaL" target="_blank">my Github</a>.</p>
                   <ul id="icons01" class="icons">
                      <li>
                         <a class="n01" href="#about" rel = "prev">
