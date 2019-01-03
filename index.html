@@ -2166,25 +2166,25 @@ Object.deepExtend = function(e, a) {
         "detect_on": "canvas",
         "events": {
             "onhover": {
-                "enable": false,
-                "mode": "grab"
+                "enable": true,
+                "mode": "bubble"
             },
             "onclick": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "push"
             },
             "resize": true
         },
         "modes": {
             "grab": {
-                "distance": 400,
+                "distance": 150,
                 "line_linked": {
                     "opacity": 1
                 }
             },
             "bubble": {
-                "distance": 400,
-                "size": 40,
+                "distance": 150,
+                "size": 20,
                 "duration": 2,
                 "opacity": 8,
                 "speed": 3
@@ -2194,7 +2194,7 @@ Object.deepExtend = function(e, a) {
                 "duration": 0.4
             },
             "push": {
-                "particles_nb": 4
+                "particles_nb": 1
             },
             "remove": {
                 "particles_nb": 2
