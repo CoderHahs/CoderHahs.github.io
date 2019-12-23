@@ -496,6 +496,14 @@ h1 .li, h2 .li, h3 .li, p .li {
     line-height: 1.25;
     text-align: inherit;
 }
+#home-title-dark {
+    color: #ffffff;
+    letter-spacing: -0.05rem;
+    width: 100%;
+    font-size: 2.5em;
+    line-height: 1.25;
+    text-align: inherit;
+}
 #home-secondary {
     font-size: 1.15em;
     font-weight: 300;
@@ -539,7 +547,8 @@ h1 .li, h2 .li, h3 .li, p .li {
     font-size: 1.25em;
 }
 #other-p {
-    text-align: justify;
+    <!--
+    text-align: justify; -->
     font-size: 0.875em;
 }
 #other-p a {
@@ -1745,7 +1754,7 @@ Object.deepExtend = function(e, a) {
                            	</ul>
                         </div>
                         <div>
-                           <div id="image01" class="image"><img src="images/HrithikShah1.jpg" alt="Hrithik Shah" /></div>
+                           <div id="image01" class="image"><img src="images/HrithikShah1.jpg" alt="Hrithik Shah" onclick = "dark_mode()" /></div>
                         </div>
                      </div>
                   </div>
@@ -1788,16 +1797,17 @@ Object.deepExtend = function(e, a) {
                   </ul>
                </section>
                <section id="work-section">
-		  <p id="other-title"><span>Uken Games | Data Analyst Intern</span><br /> <span id="date">May 2019 - Present</span></p>
-                  <p id="other-p">I developed a tool that forecasts the average lifetime value of a player based on retention to help stakeholders maximize return on ad spend targets. I created interactive data visualization using Periscope Data and Python packages such as numpy, pandas, and plotly. I provided key dashboards for FTUE, retention, and revenue for soft launch of new games. I communicated data-driven performance to various project stakeholders. I gained experience with Apache Spark, RedShift, Facebook Ads Manager.</p>
+		               <p id="other-title"><span>Uken Games | Data Analyst Intern</span><br /> <span id="date">May 2019 - Present</span></p>
+                   <div id="container" style=inline>
+                     <!-- <img src="images/uken_games.png" width="252" height="300" alt="Uken Games"/> -->
+                     <p id="other-p"><img src="images/uken_games.png" width="252" height="300" align="left" alt="Uken Games"/>I developed a tool that forecasts the average lifetime value of a player based on retention to help stakeholders maximize return on ad spend targets. I created interactive data visualization using Periscope Data and Python packages such as numpy, pandas, and plotly. I provided key dashboards for FTUE, retention, and revenue for soft launch of new games. I communicated data-driven performance to various project stakeholders. </p>
+                  </div>
                   <p id="other-title"><span>Astral Tech | Software Developer Intern</span><br /> <span id="date">July 2018 - Aug 2018</span></p>
                   <p id="other-p">As an intern, my major responsibility was increasing the efficiency of data analysis. I was introduced to SQL Server, and immediately I found myself against a major hurdle. Since the data being analysed was not always known, I had to figure out a way to flexibly collect the data while executing SQL commands. This form of coding is called Dynamic SQL, and it is used by big companies like Amazon to access their huge databases for queries. As I was developing my algorithms, my mentor in the company helped make it even more efficient, by suggesting ways in which I could go about solving the problem. Overall, I reduced analysis times from 20 hours to 20 mins.</p>
                   <p id="other-title"><span>TurnerHacks | Head of Sponsorship</span><br /> <span id="date">Nov 2017 -June 2018</span></p>
-                  <p id="other-p">I brought in 10+ tech companies as corporate sponsors for the event which helped fund costs for food, workshops and participants’ fee. I also helped raise over $5000 USD in product sponsorships and over $1000 CAD in monetary sponsorships. Working with Major League Hacking (MLH) ensured a successful hackathon.</p>
+                  <p id="other-p"><img src="images/turnerhacks.png" width="228" height="200" align="left" alt="TurnerHacks"/>I brought in 10+ tech companies as corporate sponsors for the event which helped fund costs for food, workshops and participants’ fee. I also helped raise over $5000 USD in product sponsorships and over $1000 CAD in monetary sponsorships. Working with Major League Hacking (MLH) ensured a successful hackathon.</p>
                   <p id="other-title"><span>SHAD Entrepreneurship Cup | Team GreenThreads</span><br /> <span id="date">July 2017</span></p>
                   <p id="other-p">My team and I partnered with new start-ups to promote local businesses and eco-friendly products. We presented an elevator pitch to a panel of investors. Our product, an alpha version app created using Proto.io, helps consumers see the carbon emissions created for a particular article of clothing. This helps the consumer to gain an awareness about their clothing decisions.</p>
-                  <p id="other-title"><span>Smileworks Orthodontics | Equipment Technician</span><br /> <span id="date">July 2015 - Aug 2015</span></p>
-                  <p id="other-p">Over the course of the summer, I learned how dentists scan teeth to develop 3D models that are later used to project orthodontic procedures. As I was not certified to work with patients, my task was to archive and scan all the clay models of patients' teeth. I scanned upwards of 100 tooth models using the same state-of-the-art equipment used by dentists to scan teeth. Additionally, I sterilized dental equipment and archived X-Rays.</p>
                   <ul id="icons04" class="icons" style="height: 10px;">
                      <li>
                         <a class="n01" href="#about" rel = "prev">
@@ -1810,14 +1820,22 @@ Object.deepExtend = function(e, a) {
                   </ul>
                </section>
                <section id="projects-section">
-               	  <p id="other-title"><span>HahsSearch | Python</span><br /> <span id="date">Nov 2018 - Dec 2018</span></p>
-               	  <p id="other-p">Built a prototype search engine that uses a Depth-First Search web crawler, an index and the page rank algorithm developed by Larry Page, <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a>. The project helped reinforce my understanding on how search engines rank pages. You can view my code through <a href="https://github.com/CoderHahs/HahsSearch" target="_blank">my Github</a>.</p>
-               	  <p id="other-title"><span>Personal Website | HTML, CSS, JavaScript, SEO</span><br /> <span id="date">June 2017 - Present</span></p>
-               	  <p id="other-p">Inception - you're reading about the project, while looking directly at it! The site has changed over the span of about a year, with little changes happening every update. The first few months were spent adjusting the main shell of the page, and making it look pretty. JavaScript animations and SEO were part of the last update. Markups like Schema.org, Twitter Cards and Open Graph Protocol were implemented. Meta tags such as title, description and robots were used to increase search engine rank. Look forward to more improvements!</p>
-                  <p id="other-title"><span>Yugioh Card <a href="easteregg.html" id="easter-egg">Game</a> | Java</span><br /> <span id='date'>Dec 2015 - Jan 2016</span></p>
-                  <p id="other-p">I hacked together a Java prototype of the Yugioh card game in less than a week. I wrote over 4000 lines of code implementing Java applets and creating the screen layout for the game. This undertaking was certainly a rewarding learning experience as it compelled me to prioritize my time and be scrappy. You can download this game through <a href="https://github.com/CoderHahs/Java-Game-Yugioh" target="_blank">my Github</a>.</p>
-                  <p id="other-title"><span>Invasion of the Shadows | Unity, C#, JS</span><br /> <span id='date'>Nov 2014 - Aug 2015</span></p>
-                  <p id="other-p">When developing this Unity game, I used a timeline structure, where the player would travel from one civilization to another, fighting-off aliens while also learning about the ancient civilizations of our planet. By using this approach, I ensured that the game was not only fun but also educational for the player. You can download this game through <a href="https://github.com/CoderHahs/Invasion-of-the-Shadows" target="_blank">my Github</a>.</p>
+                  <div style="margin-bottom: 100px">
+                    <p id="other-title"><span>WalkinClinic | Android Studio, Java</span><br /> <span id="date">Sep 2019 - Dec 2019</span></p>
+                    <p id="other-p"><img src="images/walkinclinic2.png" width ="172" height ="300" align="left" alt="Yugioh"/>Built a prototype search engine that uses a Depth-First Search web crawler, an index and the page rank algorithm developed by Larry Page, <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a>. The project helped reinforce my understanding on how search engines rank pages. You can view my code through <a href="https://github.com/CoderHahs/HahsSearch" target="_blank">my Github</a>.</p>
+                  </div>
+                  <div>
+                    <p id="other-title"><span>HahsSearch | Python</span><br /> <span id="date">Nov 2018 - Dec 2018</span></p>
+                 	  <p id="other-p">Built a prototype search engine that uses a Depth-First Search web crawler, an index and the page rank algorithm developed by Larry Page, <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a>. The project helped reinforce my understanding on how search engines rank pages. You can view my code through <a href="https://github.com/CoderHahs/HahsSearch" target="_blank">my Github</a>.</p>
+                  </div>
+                  <div>
+                    <p id="other-title"><span>Yugioh Card <a href="easteregg.html" id="easter-egg">Game</a> | Java</span><br /> <span id='date'>Dec 2015 - Jan 2016</span></p>
+                    <p id="other-p"><img src="images/yugioh.gif" width="298" height="200" align="left" alt="Yugioh"/>I hacked together a Java prototype of the Yugioh card game in less than a week. I wrote over 4000 lines of code implementing Java applets and creating the screen layout for the game. This undertaking was certainly a rewarding learning experience as it compelled me to prioritize my time and be scrappy. You can download this game through <a href="https://github.com/CoderHahs/Java-Game-Yugioh" target="_blank">my Github</a>.</p>
+                  </div>
+                  <div>
+                    <p id="other-title"><span>Invasion of the Shadows | Unity, C#, JS</span><br /> <span id='date'>Nov 2014 - Aug 2015</span></p>
+                    <p id="other-p"><img src="images/invasion_of_shadows.png" width="298" height="200" align="left" alt="Invasion of the Shadows"/>When developing this Unity game, I used a timeline structure, where the player would travel from one civilization to another, fighting-off aliens while also learning about the ancient civilizations of our planet. By using this approach, I ensured that the game was not only fun but also educational for the player. You can download this game through <a href="https://github.com/CoderHahs/Invasion-of-the-Shadows" target="_blank">my Github</a>.</p>
+                  </div>
                   <ul id="icons01" class="icons" style="height: 10px;">
                      <li>
                         <a class="n01" href="#about" rel = "prev">
@@ -1832,6 +1850,13 @@ Object.deepExtend = function(e, a) {
             </div>
          </div>
       </div>
+<script>
+// var title = document.getElementById("home-title");
+//
+// function dark_mode() {
+//     title.id = "home-title-dark"
+// }
+</script>
 <script>
     var on = addEventListener,
         $ = function(q) {
