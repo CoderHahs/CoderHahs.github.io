@@ -1,3 +1,4 @@
+
 var on = addEventListener,
     $ = function(q) {
         return document.querySelector(q)
