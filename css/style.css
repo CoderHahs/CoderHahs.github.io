@@ -494,15 +494,6 @@ h1 .li, h2 .li, h3 .li, p .li {
     text-decoration: none;
 }
 
-#project-p {
-    text-align: center;
-    font-size: 0.875em;
-}
-#project-p a {
-    color: #ffbd7f;
-    text-decoration: none;
-}
-
 #date {
 	color: #ffbd7f;
     line-height: 1;
