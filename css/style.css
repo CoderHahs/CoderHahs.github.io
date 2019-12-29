@@ -609,6 +609,7 @@ h1 .li, h2 .li, h3 .li, p .li {
     width: 100%;
     margin: 0;
     display: block;
+    font-size: .8em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align:center;
@@ -617,6 +618,7 @@ h1 .li, h2 .li, h3 .li, p .li {
 .header-text {
     margin: auto auto 10px;
     width: 100%;
+    font-size: .8em;
     display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
