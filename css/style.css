@@ -257,7 +257,7 @@ html {
     border-radius: inherit;
     padding: 5rem 4rem;
     max-width: 100%;
-    width: 40rem;
+    width: 38rem;
 }
 #main > .inner > header {
     margin-bottom: 1rem;
@@ -459,9 +459,14 @@ h1 .li, h2 .li, h3 .li, p .li {
 }
 #about-p a {
     color: #ffbd7f;
-    text-decoration: none;
-    font-size: 1.15em;
+    text-decoration: underline;
+    font-size: 1em;
     font-weight: : bold;
+    cursor:pointer
+}
+
+#about-p a:hover {
+  text-decoration:none;
 }
 
 #about-end {
@@ -510,19 +515,18 @@ h1 .li, h2 .li, h3 .li, p .li {
 }
 
 #date {
-	color: #ffbd7f;
-    line-height: 1;
+	  color: #ffbd7f;
     font-size: 0.8em;
     font-style: italic;
+    text-align: center;
 }
 
-@media (min-width: 640px)
+@media (min-width: 300px)
 .row {
     justify-content: space-between;
 }
 
 .row {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -533,37 +537,71 @@ h1 .li, h2 .li, h3 .li, p .li {
 @media (min-width: 640px)
 .project-wrapper {
     position: relative;
-    overflow: hidden;
     height: 100%;
     margin-bottom: 10%;
-    width: 48%;
-    transition: opacity .75s;
+    max-width: 100%;
 }
 
 .project-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 640px)
+.title-wrapper {
+    position: relative;
+    height: 100%;
+    margin-bottom: 10%;
+    max-width: 100%;
+}
+
+.title-wrapper {
+    margin-bottom: 20px;
 }
 
 @media (min-width: 640px)
 .text-wrapper {
     text-align: left;
-    width: 75%;
+    width: 100%;
 }
 
 .text-wrapper {
     text-align: center;
+    margin-bottom: 70px;
 }
 
 @media (min-width: 640px)
 .subheader-text {
+    font-weight: 600;
     line-height: 1em;
-    color: #ffbd7f;
+    color: #fff;
+    text-align:center;
 }
 
 .subheader-text {
-    color: #ffbd7f;
+    font-weight: 600;
+    color: #fff;
     line-height: 1;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    text-align:center;
+    margin: auto auto 5px;
+}
+
+@media (min-width: 640px)
+.desc-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffbd7f;
+  font-size: .9em;
+  text-align:center;
+}
+
+
+.desc-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffbd7f;
+  font-size: .9em;
+  text-align:center;
 }
 
 @media (min-width: 640px)
@@ -571,34 +609,91 @@ h1 .li, h2 .li, h3 .li, p .li {
     width: 100%;
     margin: 0;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    text-align:center;
 }
 
 .header-text {
-    margin: auto auto 20px;
+    margin: auto auto 10px;
     width: 100%;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align:center;
+}
+
+@media (min-width: 640px)
+.title-text {
+    width: 100%;
+    margin: 0;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    text-align:center;
 }
+
+.title-text {
+    margin: auto auto 10px;
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    color: #ffbd7f;
+    line-height: 1;
+    font-size: 1.4em;
+    text-align:left;
+}
+
+.title-text span {
+    display:block;
+    float:right;
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: right;
+    font-weight:0;
+}
+
 
 @media (min-width: 640px)
 .project-wrapper img {
     opacity: 1;
     transition: all .25s;
     cursor: pointer;
+    text-align:center
+}
+
+#project-image img {
+    width: 25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-image {
-    display: block;
-    height: auto;
-    margin: auto;
+    position: relative;
     max-width: 100%;
+    display: block;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-image a img, .image span img {
+    width: 25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-image img {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #credits {
